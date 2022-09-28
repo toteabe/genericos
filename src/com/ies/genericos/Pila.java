@@ -3,10 +3,7 @@ package com.ies.genericos;
 import java.util.LinkedList;
 
 /**
- * 
- * 
- * 
- * toString(): devuelve en forma de String la información de la colección
+ * Pila parametrizada sobre LinkedList
  * 
  * @author user
  *

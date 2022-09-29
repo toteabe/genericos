@@ -3,7 +3,7 @@ package com.ies.genericos;
 import java.util.LinkedList;
 
 /**
- * Pila parametrizada sobre LinkedList
+ * Pila parametrizada sobre LinkedList wrap
  * 
  * @author user
  *
@@ -58,7 +58,7 @@ public class Pila<T> {
 		StringBuffer strBuf = new StringBuffer("Respresentación de Pila");
 		
 		strBuf.append("<")
-			 	.append((lista.size() > 0 ? lista.getFirst().getClass().toString().replaceFirst("class ", ""): "pila vacía, no puedo decidir T"))
+			 	.append((lista.size() > 0 ? lista.getFirst().getClass().getSimpleName(): "pila vacía, no puedo decidir T"))
 				.append(">\n");
 		
 		strBuf.append("Resumen: pila con ").append( lista.size()).append(" elementos:\n");
@@ -78,7 +78,8 @@ public class Pila<T> {
 		pilaStr.aniadir("TRES");
 		System.out.println(pilaStr);
 
-		System.out.println((pilaStr.extraer()));
+		System.out.println("Extraigo: " + pilaStr.extraer());
+		
 		pilaStr.aniadir("CUATRO");
 		System.out.println(pilaStr);
 	}

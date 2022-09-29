@@ -10,7 +10,7 @@ import java.util.LinkedList;
  * @param <T>
  */
 
-public class Pila<T> {
+public class Pila<T> implements IPila<T> {
 
 	private LinkedList<T> lista;
 

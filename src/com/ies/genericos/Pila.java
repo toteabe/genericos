@@ -23,6 +23,8 @@ public class Pila<T> implements IPila<T> {
 	 * 
 	 * @return true si pila vacía, falso si pila con algún valor
 	 */
+	
+	@Override
 	public boolean estaVacia() {
 		return lista.isEmpty();
 	}

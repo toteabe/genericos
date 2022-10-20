@@ -16,5 +16,7 @@ public @interface EmpleadoAnotado {
     int codigoTaller() default -1;
     String perfil() default "";
     String categoria() default "";
-
+    
+    Contacto contacto() default @Contacto( valor= "__VOID__"); 
+    
 }
